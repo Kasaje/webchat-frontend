@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { io, Socket } from "socket.io-client";
 
-// ชี้เป้าไปหาหลังบ้าน (Local ใช้ 3001 พอ deploy จริงจะดึงค่าจาก env บน Vercel อัตโนมัติ)
 const SOCKET_URL =
   process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:3001";
 
@@ -121,7 +120,7 @@ export default function ChatRoom() {
                 key={index}
                 className="flex justify-center my-3 px-2 text-center"
               >
-                <span className="text-[10px] md:text-[11px] font-mono tracking-tight text-zinc-400 dark:text-zinc-500 bg-zinc-100 dark:bg-zinc-900/60 px-3 py-1 rounded-full border border-zinc-200/30 dark:border-zinc-800/30 max-w-full break-words">
+                <span className="text-[10px] md:text-[11px] font-mono tracking-tight text-zinc-400 dark:text-zinc-500 bg-zinc-100 dark:bg-zinc-900/60 px-3 py-1 rounded-full border border-zinc-200/30 dark:border-zinc-800/30 max-w-full wrap-break-word">
                   {msg.text}
                 </span>
               </div>
@@ -150,7 +149,7 @@ export default function ChatRoom() {
       </main>
 
       {/* 📱 Floating Input Controller: ปรับระยะห่างให้พอดีนิ้วกดบนมือถือ */}
-      <footer className="p-4 md:p-6 max-w-2xl w-full mx-auto bg-gradient-to-t from-zinc-50 via-zinc-50 to-transparent dark:from-zinc-950 dark:via-zinc-950 sticky bottom-0">
+      <footer className="p-4 md:p-6 max-w-2xl w-full mx-auto bg-linear-to-t from-zinc-50 via-zinc-50 to-transparent dark:from-zinc-950 dark:via-zinc-950 sticky bottom-0">
         <form
           onSubmit={sendMessage}
           className="relative flex items-center bg-zinc-100 dark:bg-zinc-900 rounded-full px-4 py-3 md:px-5 md:py-3.5 shadow-inner border border-transparent focus-within:border-zinc-300 dark:focus-within:border-zinc-700 transition-all w-full"
