@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💬 1:1 Private Chat (Frontend)
 
-## Getting Started
+The user interface for the ultra-minimalist, real-time private chat application. Built with Next.js (App Router), Tailwind CSS, and Socket.io-client.
 
-First, run the development server:
+## 🌐 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Frontend URL:** [https://webchat-frontend-mauve.vercel.app](https://webchat-frontend-mauve.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Ultra-Minimalist UI:** Clean, distraction-free typography and design.
+- **Responsive Layout:** Optimized perfectly for Mobile, Tablet, and Desktop screens.
+- **Auto-Scroll & Text Break:** Automatically scrolls to the newest message and strictly forces long unspaced strings to wrap, avoiding any text overflow.
+- **Zero Database & Pure Privacy:** Messages flow entirely through memory and disappear instantly when the session ends.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework:** Next.js 14+ (App Router, TypeScript)
+- **Styling:** Tailwind CSS
+- **Real-time Engine:** Socket.io-client
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Local Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
